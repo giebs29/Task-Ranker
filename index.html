@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task Ranker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="functions.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Task Ranker</h2>
+  <p>Fill out the form below to determine task priority:</p>
+  <form>
+    <div class="form-group">
+      <label for="sel1">Requestor:</label>
+      <select class="form-control" id="requestor">
+        <option value=10>Citizen</option>
+        <option value=6>Other department</option>
+        <option value=6>Committee</option>
+        <option value=6>Supervisor</option>
+        <option value=4>Team leader</option>
+        <option value=2>Support staff</option>
+        <option value=1>Appraiser</option>
+      </select>
+      <br>
+      <label for="sel2">Task Relevance:</label>
+      <select class="form-control" id="relevance">
+        <option value=10>County</option>
+        <option value=8>Department</option>
+        <option value=4>Team</option>
+        <option value=1>Individual</option>
+      </select>
+      <br>
+      <label for="sel1">Business Impact:</label>
+      <select class="form-control" id="impact">
+        <option value=10>Core</option>
+        <option value=5>Supporting</option>
+        <option value=0>NA</option>
+      </select>
+      <br>
+      <label for="sel1">Urgency:</label>
+      <select class="form-control" id="urgency">
+        <option value=10>1 Day</option>
+        <option value=10>2 Days</option>
+        <option value=9>1 Week</option>
+        <option value=7>2 Weeks</option>
+        <option value=5>1 Month</option>
+        <option value=3>3 Months</option>
+        <option value=2>6 Months</option>
+        <option value=1>1 Year</option>
+        <option value=0>Unknown</option>
+      </select>
+      <br>
+      <label for="sel1">Type:</label>
+      <select class="form-control" id="type">
+        <option value=10>Information</option>
+        <option value=10>Bug</option>
+        <option value=8>Modification</option>
+        <option value=8>Creation</option>
+        <option value=8>Data managment</option>
+      </select>
+      <br>
+      <label for="sel1">Communication:</label>
+      <select class="form-control" id="communication">
+        <option value=10>Yes</option>
+        <option value=0>No</option>
+      </select>
+      <br>
+      <label for="sel1">Standardization:</label>
+      <select class="form-control" id="standardization">
+        <option value=10>Yes</option>
+        <option value=0>No</option>
+      </select>
+      <br>
+      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
